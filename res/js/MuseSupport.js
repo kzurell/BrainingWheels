@@ -43,8 +43,8 @@ MuseSupport.prototype._init = function(resolve, reject) {
 
     // UDP port from muse-io.
     var port = new osc.UDPPort({
-        localAddress: "127.0.0.1",
-        localPort: 57121
+        localAddress: MUSE_IO_IP_ADDR,
+        localPort: MUSE_IO_IP_PORT
     });
 
     var elementsPattern = /\/muse\/elements\/(.+)/;
