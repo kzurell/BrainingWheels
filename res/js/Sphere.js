@@ -1,3 +1,7 @@
+/* BrainingWheels
+ * kirk.zurell.name
+ */
+
 Sphere = function()
 {
   this.params = {};
@@ -78,6 +82,12 @@ Sphere.prototype.update = function()
   Sim.Object.prototype.update.apply(this, arguments);
 
   var sphere = this;
+
+  /* HACKABLE: Sphere object
+   this.model.[mood/energy/presence] 0.0 - 1.0
+   sphere.[Sim.js methods]
+   sphere.object3D.[Three.js mesh methods]
+   */
 
   var g = Math.clip(this.model.energy, 0.01, 1.0);
   sphere.setScale(g,g,g);

@@ -1,3 +1,7 @@
+/* BrainingWheels
+ * kirk.zurell.name
+ */
+
 var enn = 5;
 
 var PATH_CONCENTRATION = '/muse/elements/experimental/concentration';
@@ -130,7 +134,7 @@ ModelSource.prototype.init = function() {
   var modelListener = this.processMessage.bind(this);
   this.muse.addMuseListener(modelListener);
 
-
+  /* HACKABLE: for sample data when Muse not available. */
   //var fakeInput = window.setInterval(function(){
     //if(modelSource.controlState.live == 0) {
       //modelSource.fakeMessage();

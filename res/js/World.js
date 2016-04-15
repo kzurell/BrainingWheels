@@ -1,5 +1,9 @@
 /*global World Sim THREE STWEEN TWEEN WorldSound */
 
+/* BrainingWheels
+ * kirk.zurell.name
+ */
+
 World = function()
 {
     Sim.Object.call(this);
@@ -34,8 +38,6 @@ World.prototype.init = function(params)
   world3D.add(this.skybox);
 
 
-
-
   // Sun.
   this.suncolor = new THREE.Color(0.5,0.5,1.0);
   this.sunlight = new THREE.DirectionalLight( this.suncolor, 1 );
@@ -46,7 +48,6 @@ World.prototype.init = function(params)
 
 
   this.setObject3D(world3D);
-
 
 
   // Connect world to the user input.
@@ -96,7 +97,13 @@ World.prototype.update = function()
   // Include children.
   Sim.Object.prototype.update.apply(this, arguments);
 
-  // Adjust lights in the scene.
+
+
+  /* HACKABLE: Adjust lights in the scene.
+   this.model.[mood/energy/presence] 0.0 - 1.0
+   this.sunlight.[Three.js light properties]
+   this.skymat.[Three.js material properties]
+   */
 
   var maxIntensity = 1.0;
 

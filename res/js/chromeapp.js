@@ -1,7 +1,10 @@
 /*global chrome */
 
-/* Chrome-app specific parts of Amy's Garden */
+/* BrainingWheels
+ * kirk.zurell.name
+ */
 
+/* Chrome-app specific parts of Amy's Garden */
 
 chrome.app.runtime.onLaunched.addListener(function () {
     chrome.app.window.create("index.html", {

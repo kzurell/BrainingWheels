@@ -1,11 +1,15 @@
 /*global MuseSupport CreateMuseSupport MuseSupportSingleton osc chrome */
 
+/* BrainingWheels
+ * kirk.zurell.name
+ */
+
 /* MUSE ROUTINES */
 
 MuseSupport = function() {
-    this.osclisteners = [];
-    this.muselisteners = [];
-    this.port = null;
+  this.osclisteners = [];
+  this.muselisteners = [];
+  this.port = null;
 };
 
 MuseSupport.prototype = new Object();

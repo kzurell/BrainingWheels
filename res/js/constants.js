@@ -1,4 +1,6 @@
-
+/* BrainingWheels
+ * kirk.zurell.name
+ */
 
 // Global constants.
 var MODEL_MESSAGE = 'model';

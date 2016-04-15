@@ -1,3 +1,7 @@
+/* BrainingWheels
+ * kirk.zurell.name
+ */
+
 /* Application object */
 
 /* Initialization */
@@ -39,20 +43,24 @@ BWApp.prototype.init = function(params) {
   /* Rendering setup */
 
   app.renderer.setClearColor(0x100000, 0);
-  // Position camera.
-  //this.camera.rotation.set(0,0,0.5*Math.PI);
-  //this.camera.position.set(0,6,5);
-  this.camera.position.set(0,2,25);
 
 
+  /* Connect to input, will publish its own model. */
+  this.modelSource = new ModelSource();
+  this.modelSource.init({});
 
 
-  /* OBJECTS SETUP
+  /* HACKABLE: OBJECTS SETUP
 
    All objects here are created only once at app start.
 
    */
 
+
+  // Position camera.
+  //this.camera.rotation.set(0,0,0.5*Math.PI);
+  //this.camera.position.set(0,6,5);
+  this.camera.position.set(0,2,25);
 
 
   /* World */
@@ -61,19 +69,14 @@ BWApp.prototype.init = function(params) {
   world.init({});
   app.addObject(world);
 
-  /* Connect to input, will publish its own model. */
-  this.modelSource = new ModelSource();
-  this.modelSource.init({});
 
-
+  /* Something to look at. */
   var sphere = new Sphere();
   sphere.init({});
-
-  // Add the sphere to the scene.
   app.addObject( sphere );
 
 
-
+  /* App.run() gets called eventually. */
 
 };
 

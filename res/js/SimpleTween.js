@@ -1,13 +1,16 @@
 /*global STWEENCTL TWEEN STWEEN localPerformance */
 
 /* Simple Tweens
+ * kirk.zurell.name
+ */
+
+/* Simple Tweens
 
  Ensures that tween can accept new target at any time
  new STWEEN(model, "id").to(target, seconds)
 
  Self-timing using self.performance
  */
-
 
 /* Uses localPerformance from main.js to separate out for tests. */
 
