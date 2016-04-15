@@ -1,0 +1,26 @@
+{
+  "name": "brainingwheels",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kzurell/BrainingWheels",
+  "authors": [
+    "Kirk Zurell <kirk@kirk.zurell.name>"
+  ],
+  "description": "Sample project for Digital & New Media meetup featuring MUSE.",
+  "main": "index.html",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threejs": "r75",
+    "Sim.js": "https://github.com/kzurell/Sim.js.git#r75",
+    "osc.js": "^2.0.3",
+    "jquery": "^2.2.3",
+    "jquery-mousewheel": "^3.1.13",
+    "tween.js": "sole/tween.js#^16.3.4"
+  }
+}

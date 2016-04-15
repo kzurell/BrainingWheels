@@ -1,0 +1,25 @@
+{
+    "sockets": {
+        "udp": {
+            "bind": "",
+            "send": ""
+        },
+        "tcp" : {
+        },
+        "tcpServer" : {
+        }
+    },
+    "app": {
+        "background": {
+            "scripts": ["res/js/chromeapp.js"],
+            "persistent": true
+        }
+    },
+    "manifest_version": 2,
+    "name": "BrainingWheels",
+    "description": "Sample project for Digital & New Media meetup featuring MUSE.",
+    "version": "1",
+    "icons": {
+        "128": "res/images/icon_128.png"
+    }
+}
